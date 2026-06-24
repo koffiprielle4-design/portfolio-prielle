@@ -1,0 +1,8 @@
+.footer { background:var(--dark); color:var(--white); padding:3.5rem 4rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1.5rem; }
+.logo { font-family:'Cormorant Garamond',serif; font-size:1.05rem; font-weight:600; letter-spacing:.1em; cursor:pointer; }
+.logo span { color:var(--light); }
+.copy { font-size:.7rem; opacity:.3; letter-spacing:.1em; }
+.links { display:flex; gap:1.8rem; }
+.link { font-size:.65rem; letter-spacing:.15em; text-transform:uppercase; font-weight:500; opacity:.4; transition:opacity .2s,color .2s; }
+.link:hover { opacity:1; color:var(--light); }
+@media(max-width:768px) { .footer{padding:2.5rem 1.5rem;flex-direction:column;align-items:flex-start;gap:1rem;} }

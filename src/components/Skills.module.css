@@ -1,0 +1,11 @@
+.section { padding:8rem 4rem; position:relative; overflow:hidden; }
+.canvas { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; opacity:.14; z-index:0; }
+.inner { max-width:1400px; margin:0 auto; position:relative; z-index:1; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
+.cat { background:var(--white); border:1px solid var(--border); border-radius:6px; padding:2rem; }
+.catTitle { font-size:.65rem; letter-spacing:.2em; text-transform:uppercase; color:var(--brown); margin-bottom:1.5rem; font-weight:700; padding-bottom:.8rem; border-bottom:1px solid var(--border); }
+.list { display:flex; flex-wrap:wrap; gap:.6rem; }
+.item { padding:.45rem .85rem; background:var(--cream); border-radius:2px; border:1px solid var(--border); font-size:.72rem; font-weight:500; color:var(--dark); transition:all .2s; cursor:default; display:inline-flex; align-items:center; gap:.4rem; }
+.item:hover { background:var(--brown); color:var(--white); border-color:var(--brown); }
+@media(max-width:1024px) { .grid { grid-template-columns:repeat(2,1fr); } }
+@media(max-width:768px) { .section { padding:5rem 1.5rem; } .grid { grid-template-columns:1fr; } }
